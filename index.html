@@ -13,7 +13,7 @@ audio_clip = AudioFileClip(audio_file)
 duration = audio_clip.duration
 print(f"🎵 टेस्ट ऑडियो मिल गया! लंबाई: {duration} सेकंड")
 
-# 2. बैकग्राउंड इमेज को 1080x1920 (यूट्यूब शॉर्ट्स साइज) में सेट करना
+# 2. बैकग्राउंड इमेज को 1080x1920 में सेट करना
 base_clip = ImageClip(background_image).set_duration(duration)
 base_clip = base_clip.resize(newsize=(1080, 1920))
 
